@@ -1,0 +1,68 @@
+*{
+  box-sizing: border-box;
+  padding:0;
+  margin:0;
+}
+body{
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.container__carousel{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height:100vh;
+}
+.carousel{
+  width: 800px;
+  height: auto;
+  position: relative;
+}
+.carousel img{
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+}
+img{
+  display: none;
+}
+.next,
+.prev{
+  top:50%;
+  position: absolute;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: white;
+  padding:15px;
+}
+.next{
+  right:0;
+}
+.prev{
+  left:0;
+}
+.bullet,
+.title{
+  position: absolute;
+  cursor: pointer;
+  bottom:0;
+  left: 50%;
+  transform: translateX(-50%);
+  padding:20px;
+  color:white;
+}
+.title{
+  margin-bottom: 40px;
+  color: white;
+  display: none;
+}
+.active{
+  display: block;
+}
+.bg__white{
+  background-color: white;
+  border-radius: 50%;
+}
